@@ -19,12 +19,6 @@ usb_gamepad.o: usb_gamepad.h
 .c.o:
 	$(CC) $(COPTS) -c $< -o $@
 
-mk_adctab: mk_adctab.c
-	gcc -o $@ $<
-
-adctab.h: mk_adctab
-	./$< > $@
-
 $(APP).elf: $(OBJS)
 	$(CC) $(COPTS) $(OBJS) -o $(APP).elf
 

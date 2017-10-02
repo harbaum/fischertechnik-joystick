@@ -53,16 +53,16 @@
  **************************************************************************/
 
 // You can change these to give your code its own name.
-#define STR_MANUFACTURER	L"Fischertechnik GmbH"
-#define STR_PRODUCT		L"Fischertechnik Joystick Interface"
+#define STR_MANUFACTURER	L"Till Harbaum"
+#define STR_PRODUCT		L"Joystick Interface for fischertechnik"
 
 
 // Mac OS-X and Linux automatically load the correct drivers.  On
 // Windows, even though the driver is supplied by Microsoft, an
 // INF file is needed to load the driver.  These numbers need to
 // match the INF file.
-#define VENDOR_ID               0x146a  // Knobloch!
-#define PRODUCT_ID              0x0815  // <= CHECK!!!
+#define VENDOR_ID               0x1c40  // EZ prototypes
+#define PRODUCT_ID              0x0539  // joystick IF
 
 // USB devices are supposed to implment a halt feature, which is
 // rarely (if ever) used.  If you comment this line out, the halt
